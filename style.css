@@ -95,3 +95,36 @@ address {
     color: white;
     margin-left: 100px;
 }
+
+@keyframes engorgio {
+    0% {
+    }
+    50% {
+    }
+    100% {
+    }
+}
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.standalone-text {
+    color: white;
+    font-size: 48px;
+    animation: engorgio 1s linear infinite;
+}
+
+.rainbow-text {
+    background: linear-gradient(90deg, #FF0000, #FFA500, #FFFF00, #008000, #00FFFF, #0000FF, #800080, #FF0000);
+    background-size: 50% 100%; /* Adjust this value to make the gradient shorter */
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 10s linear infinite;
+    font-size: 48px;
+    text-align: center;
+}
