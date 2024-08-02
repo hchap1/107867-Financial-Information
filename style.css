@@ -1,15 +1,28 @@
 head, body {
-    margin: 0px; !important
+    margin: 0px !important;
 }
 
 body {
-  background-color: #100030;
+    padding-top: 0px;
+    margin-top: 0px;
+    border-top: 0px;
+    background-color: #100030;
+}
+
+#top {
+    margin-top: 100px;
 }
 
 .banner {
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px;
     background-color: #271f59;
     height: 80px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .content {
@@ -17,6 +30,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
+}
+
+.tile_img {
+    width: 100px;
 }
 
 code {
